@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startseite</title>
+    <title>Private Person Webseite</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
         <nav>
-            <ul id="menu" class="menu">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="about/index.html">Über uns</a></li>
-                <li><a href="contact/index.html">Kontakt</a></li>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
             </ul>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </nav>
     </header>
+
     <main>
-        <h1>Willkommen auf unserer Webseite!</h1>
-        <p>Hier ist ein Beispiel für eine einfache Webseite mit Navigation, Animationen und einem Footer.</p>
+        <h1>Willkommen auf meiner persönlichen Webseite!</h1>
+        <button class="animated-button">Klicke hier</button>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <p>Dies ist ein Modal.</p>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Meine Webseite. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Deine Name. Alle Rechte vorbehalten.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
